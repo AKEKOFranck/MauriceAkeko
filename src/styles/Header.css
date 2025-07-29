@@ -1,0 +1,75 @@
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    flex-direction: row;
+}
+
+.navtitle{
+    font-weight: 900;
+    color: black;
+}
+.navtitle:hover{
+    color: blue;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.navicons{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 50px;
+    border: 1px solid whitesmoke;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.navlink{
+    color: black;
+    font-weight: 500;
+}
+.navlink:hover{
+    text-decoration: underline;
+    color: red;
+    opacity: 0.8;
+}
+
+nav.closed {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+}
+
+
+@media (max-width:700px) {
+    nav{
+        flex-direction: column;
+        width: 30%;
+        height: 300px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width:700px) and (max-width:1400px) {
+    nav{
+        width: 50%;
+        justify-content: space-between;
+    }
+}

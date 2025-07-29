@@ -1,0 +1,107 @@
+.profil_main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profil_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    position: relative;
+    top: -50px;
+    min-height: 500px; /* Utilisation de min-height pour éviter le débordement */
+    padding: 25px;
+    margin-top: 100px; /* Remplace "top: 100px" pour éviter les conflits avec "position" */
+    text-align: left; /* Alignement à gauche pour une meilleure lisibilité */
+    border: 5px solid black;
+    border-radius: 10px; /* Bords arrondis pour un style moderne */
+    background-color: #f9f9f9; /* Fond légèrement gris pour un contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    overflow-y: auto; /* Ajout d'une barre de défilement si le contenu dépasse */
+}
+
+.profil_title {
+    margin: 0;
+    font-size: 16px; /* Taille de police adaptée */
+    line-height: 1.6; /* Espacement des lignes pour la lisibilité */
+    color: #333; /* Couleur de texte plus douce que le noir pur */
+    white-space: pre-line; /* Respect des sauts de ligne dans le texte */
+}
+
+.profil_title strong {
+    font-weight: bold;
+    color: #000; /* Mots-clés en noir pour les titres (Profil, Objectif, etc.) */
+}
+.profil_box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+  min-width: 250px; /* Évite un écrasement sur mobile */
+  height: 300px;
+  text-align: center;
+  border: 5px solid black;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 20px; /* Ajoute un espace interne */
+  border-radius: 15px; /* Bords arrondis */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+.profil_text {
+  font-size: 1rem;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profil_icon {
+  font-size: 5rem;
+  border-radius: 20px;
+  background: #fff; /* Fond blanc pour l'icône */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px inset black; /* Contour noir */
+}
+
+
+@media (max-width:700px) {
+
+    .profil_main{
+        flex-direction: column-reverse;
+        height: 200vh;
+       
+    }
+    .profil_box{
+    width: 100%;
+    height: 5px;
+   
+   }
+
+   .profil_box1{
+    width: 100%;
+    
+    top: 50px;
+   }
+}
+
+@media (min-width:700px) and (max-width:1400px) {
+   .profil_box{
+    width: 50%;
+   }
+
+   .profil_box1{
+    width: 40%;
+    height: 400px;
+   }
+
+
+    }
